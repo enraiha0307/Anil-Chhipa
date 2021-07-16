@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width:480px){   //phones only having min width 480px
+ 
+  .preload{
+  
+    background-color: #3B3E47;
+    color:#EBF2F8;
+    height: 100vh;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   p{
+     position: relative;
+     transform: translateY(-50%);
+     letter-spacing: 5px;
+   }
+   .underline{
+     position: relative;
+     width: 180px;
+     height: 1px;
+     background-color:#EBF2F8 ;
+
+   }
+  }
+ .home{
+   height: 100vh;
+   display:flex ; 
+   flex-direction: column;
+   justify-content:center ;
+   align-items: center;
+  p{
+    margin: 5px;
+    font-size: 48px;
+  }
+  .line-1{
+    font-size: 38px;
+    transform: translateX(-46%);
+    
+  }
+  .line-3{
+    font-size: 28px;
+  }
+
+  button{
+    margin: 2%;
+    padding:  10px 15px;
+    font-weight: 400;
+    border-radius: 30px;
+    background-color: EBF2F8;
+    letter-spacing: 1px;
+    color: #1F232D;
+    border: none;
+  }
+   ul{
+    display:flex ; 
+    justify-content:space-around;
+    align-items: center;
+    list-style: none;
+    margin: 2%;
+    li{
+      margin: 10%;
+    }
+   }
+ }
+
+}
+
+
+@media only screen and (min-width:768px){   //medium devices landscape tablets and up
+  body{
+    background-color: red;
+  }
+}
+
+
+@media only screen and (min-width:1024px){      // mini laptops
+  body{
+    background-color: green;
+  }
+}
+@media only screen and (min-width:1280px){      // large laptops and desktops and up
+  body{
+    background-color: blue;
+  }
+}

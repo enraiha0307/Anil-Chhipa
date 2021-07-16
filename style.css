@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: 480px) {
+  .preload {
+    background-color: #3B3E47;
+    color: #EBF2F8;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .preload p {
+    position: relative;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    letter-spacing: 5px;
+  }
+  .preload .underline {
+    position: relative;
+    width: 180px;
+    height: 1px;
+    background-color: #EBF2F8;
+  }
+  .home {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home p {
+    margin: 5px;
+    font-size: 48px;
+  }
+  .home .line-1 {
+    font-size: 38px;
+    -webkit-transform: translateX(-46%);
+            transform: translateX(-46%);
+  }
+  .home .line-3 {
+    font-size: 28px;
+  }
+  .home button {
+    margin: 2%;
+    padding: 10px 15px;
+    font-weight: 400;
+    border-radius: 30px;
+    background-color: EBF2F8;
+    letter-spacing: 1px;
+    color: #1F232D;
+    border: none;
+  }
+  .home ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    margin: 2%;
+  }
+  .home ul li {
+    margin: 10%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: green;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  body {
+    background-color: blue;
+  }
+}
+/*# sourceMappingURL=style.css.map */
