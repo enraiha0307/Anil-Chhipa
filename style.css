@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +7,9 @@
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-device-width: 360px) and (max-device-width: 768px) {
   .preload {
-    background-color: #3B3E47;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(254, 255, 255, 0.052) 2.65%, rgba(59, 62, 71, 0.2) 100%), #3B3E47;
     color: #EBF2F8;
     height: 100vh;
     display: -webkit-box;
@@ -39,6 +40,157 @@
   }
   .home {
     height: 100vh;
+    background-image: url(./imgs/Chhipa-1.png);
+    background-position: top right;
+    background-size: cover;
+  }
+  .home .Rectangle {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    top: 50%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: rgba(26, 26, 27, 0.38);
+    background-blend-mode: multiply;
+    color: #EBF2F8;
+  }
+  .home .Rectangle p {
+    margin: 5px;
+    font-size: 48px;
+  }
+  .home .Rectangle .line-1 {
+    font-size: 38px;
+    -webkit-transform: translateX(-46%);
+            transform: translateX(-46%);
+  }
+  .home .Rectangle .line-3 {
+    font-size: 28px;
+  }
+  .home .Rectangle button {
+    margin: 2%;
+    padding: 10px 15px;
+    font-weight: 400;
+    border-radius: 30px;
+    background-color: #EBF2F8;
+    letter-spacing: 1px;
+    color: #1F232D;
+    border: none;
+  }
+  .home .Rectangle ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    margin: 2%;
+  }
+  .home .Rectangle ul li {
+    margin: 10%;
+  }
+  .Experience {
+    height: 100vh;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.104) 0%, rgba(235, 242, 248, 0.2) 100%), #EBF2F8;
+    color: #1F232D;
+  }
+  .Experience .heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Experience .heading h1 {
+    position: relative;
+    font-size: 28px;
+    padding-top: 15%;
+  }
+  .Experience .brain-svg {
+    position: relative;
+    bottom: 20%;
+    right: 0%;
+  }
+  .Experience .Jobs {
+    height: 80vh;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.104) 0%, rgba(235, 242, 248, 0.2) 100%), #EBF2F8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Experience .Jobs .job {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #494E55;
+  }
+  .Experience .Jobs .job h4 {
+    font-family: 'Open Sans', 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  .Experience .Jobs .job img {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  hr {
+    border: none;
+    border: 1px solid #fbfbfb;
+  }
+  .Projects {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.104) 0%, rgba(235, 242, 248, 0.2) 100%), #EBF2F8;
+    color: #1F232D;
+  }
+  .Projects .heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Projects .heading h1 {
+    position: relative;
+    font-size: 28px;
+    padding-top: 15%;
+  }
+  .Projects .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -53,29 +205,163 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .home p {
-    margin: 5px;
-    font-size: 48px;
+  .Projects .container .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 5%;
+    width: 250px;
+    height: 250px;
+    padding: 5%;
+    background-color: #FFFFF0;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 8px 1px rgba(184, 178, 178, 0.25);
+            box-shadow: 0px 3px 8px 1px rgba(184, 178, 178, 0.25);
   }
-  .home .line-1 {
-    font-size: 38px;
-    -webkit-transform: translateX(-46%);
-            transform: translateX(-46%);
+  .Projects .container .card h2 {
+    color: #494E55;
+    font-size: 18px;
+    text-align: center;
   }
-  .home .line-3 {
-    font-size: 28px;
+  .Projects .container .card p {
+    color: #494E55;
+    font-size: 14px;
+    text-align: center;
   }
-  .home button {
-    margin: 2%;
-    padding: 10px 15px;
-    font-weight: 400;
-    border-radius: 30px;
-    background-color: EBF2F8;
-    letter-spacing: 1px;
+  .Projects .container .card p span {
+    color: black;
+    font-weight: 500;
+  }
+  .Projects .container a {
+    color: #494E55;
+    font-size: 14px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .Projects .container a:hover {
     color: #1F232D;
-    border: none;
   }
-  .home ul {
+  .Contact {
+    height: 100vh;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.104) 0%, rgba(235, 242, 248, 0.2) 100%), #EBF2F8;
+    color: #1F232D;
+  }
+  .Contact .heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Contact .heading h1 {
+    position: relative;
+    font-size: 28px;
+    padding-top: 15%;
+  }
+  .Contact .form-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 5%;
+    padding: 5%;
+    background-color: #FFFFF0;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 8px 1px rgba(184, 178, 178, 0.25);
+            box-shadow: 0px 3px 8px 1px rgba(184, 178, 178, 0.25);
+  }
+  .Contact .form-container h2 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 18px;
+    margin: 5px;
+    font-weight: 300;
+  }
+  .Contact .form-container form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Contact .form-container form label {
+    margin: 5px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .Contact .form-container form label input {
+    margin: 5px;
+    border: none;
+    border-bottom: 1px solid #1F232D;
+    background-color: #FFFFF0;
+  }
+  .Contact .form-container form button {
+    background-color: #1F232D;
+    border: none;
+    padding: 10px;
+    margin: 2px;
+    color: #FFFFF0;
+  }
+  .footer {
+    height: 30vh;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(254, 255, 255, 0.052) 2.65%, rgba(59, 62, 71, 0.2) 100%), #3B3E47;
+    color: #EBF2F8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .footer-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .footer-heading h1 {
+    position: relative;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .footer ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -87,26 +373,263 @@
     list-style: none;
     margin: 2%;
   }
-  .home ul li {
+  .footer ul li {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .footer .made h2 {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .footer .copyright h3 {
+    margin: 2px;
+    font-size: 10px;
+    font-weight: 200;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .home {
+    height: 100vh;
+    background-image: url(./imgs/Chhipa-1.png);
+    background-position: top;
+    background-size: cover;
+  }
+  .home .Rectangle {
+    height: 100vh;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #EBF2F8;
+  }
+  .home .Rectangle p {
+    margin: 5px;
+    font-size: 48px;
+  }
+  .home .Rectangle .line-1 {
+    font-size: 38px;
+    -webkit-transform: translateX(-46%);
+            transform: translateX(-46%);
+  }
+  .home .Rectangle .line-3 {
+    font-size: 28px;
+  }
+  .home .Rectangle button {
+    margin: 2%;
+    padding: 10px 15px;
+    font-weight: 400;
+    border-radius: 30px;
+    background-color: #EBF2F8;
+    letter-spacing: 1px;
+    color: #1F232D;
+    border: none;
+  }
+  .home .Rectangle ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    margin: 2%;
+  }
+  .home .Rectangle ul li {
     margin: 10%;
   }
-}
-
-@media only screen and (min-width: 768px) {
-  body {
-    background-color: red;
+  .Experience {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.104) 0%, rgba(235, 242, 248, 0.2) 100%), #EBF2F8;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
-@media only screen and (min-width: 1024px) {
-  body {
-    background-color: green;
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) {
+  .home {
+    height: 100vh;
+    background-image: url(./imgs/Chhipa-1.png);
+    background-position: top;
+    background-size: cover;
+  }
+  .home .Rectangle {
+    height: 100vh;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #EBF2F8;
+  }
+  .home .Rectangle p {
+    margin: 5px;
+    font-size: 48px;
+  }
+  .home .Rectangle .line-1 {
+    font-size: 38px;
+    -webkit-transform: translateX(-46%);
+            transform: translateX(-46%);
+  }
+  .home .Rectangle .line-3 {
+    font-size: 28px;
+  }
+  .home .Rectangle button {
+    margin: 2%;
+    padding: 10px 15px;
+    font-weight: 400;
+    border-radius: 30px;
+    background-color: #EBF2F8;
+    letter-spacing: 1px;
+    color: #1F232D;
+    border: none;
+  }
+  .home .Rectangle ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    margin: 2%;
+  }
+  .home .Rectangle ul li {
+    margin: 10%;
+  }
+  .Experience {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.104) 0%, rgba(235, 242, 248, 0.2) 100%), #EBF2F8;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  body {
-    background-color: blue;
+  .home {
+    height: 100vh;
+    background-image: url(./imgs/Chhipa-1.png);
+    background-position: top;
+    background-size: cover;
+  }
+  .home .Rectangle {
+    height: 100vh;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #EBF2F8;
+  }
+  .home .Rectangle p {
+    margin: 5px;
+    font-size: 48px;
+  }
+  .home .Rectangle .line-1 {
+    font-size: 38px;
+    -webkit-transform: translateX(-46%);
+            transform: translateX(-46%);
+  }
+  .home .Rectangle .line-3 {
+    font-size: 28px;
+  }
+  .home .Rectangle button {
+    margin: 2%;
+    padding: 10px 15px;
+    font-weight: 400;
+    border-radius: 30px;
+    background-color: #EBF2F8;
+    letter-spacing: 1px;
+    color: #1F232D;
+    border: none;
+  }
+  .home .Rectangle ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    margin: 2%;
+  }
+  .home .Rectangle ul li {
+    margin: 10%;
+  }
+  .Experience {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.104) 0%, rgba(235, 242, 248, 0.2) 100%), #EBF2F8;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
