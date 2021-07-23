@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anil Chhipa</title>
+    <script>
+    	// Picture element HTML5 shiv
+    	document.createElement( "picture" );
+  	</script>
+  	<script src="picturefill.min.js"></script>
     <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,116 +16,147 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-   
-  <section class="preload">
-      <p>ANIL CHHIPA</p>
-      <div class="underline"></div>
-  </section>
-  
-  <section class="home">
-    <div class="Rectangle">
-      <p class="line-1">Hi, I am</p>
-      <p class="line-2">Anil Chhipa</p>
-      <p class="line-3">Software Developer</p>
-      <button> HIRE ME</button>
-      <ul>
-          <li> <box-icon name='envelope'  color='#EBF2F8' ></box-icon></li>
-          <li ><box-icon name='github'  type='logo' color='#EBF2F8' ></box-icon></li>
-          <li ><box-icon name='linkedin'  type='logo' color='#EBF2F8' ></box-icon></li>
-      </ul>
-    </div>
-  </section>
-  <section class="Experience">
-      <div class="heading">
-          <h1>EXPERIENCE</h1>
-      </div>
-      <div class="Jobs">
-        <div class="job">
-            <!-- <img src="./imgs/axtria-logo-200x200-1.png" alt="Axtria-Logo"/> -->
-            <h2>AXTRIA</h2>
-            <h3>ANALYST</h3>
-            <h4>JULY 2021-CURRENT</h4>
-        </div>
+    <div class="wrapper">
+        <section class="preload">
+            <p>ANIL CHHIPA</p>
+            <div class="underline"></div>
+        </section>
+        <section class="site-begin">
+            <nav>
+                <!-- <svg class="menu" width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="1.5" y1="11.5" x2="28.5" y2="11.5" stroke="#3B3E47" stroke-width="3" stroke-linecap="round"/>
+                    <line x1="1.5" y1="1.5" x2="28.5" y2="1.5" stroke="#3B3E47" stroke-width="3" stroke-linecap="round"/>
+                    <line x1="1.5" y1="21.5" x2="28.5" y2="21.5" stroke="#3B3E47" stroke-width="3" stroke-linecap="round"/>
+                    </svg> -->
+                    
+                <ul>
+                    <a href=""><li>Home</li></a>
+                    <a href=""><li>Experience</li></a>
+                    <a href=""> <li>Projects</li></a>
+                    <a href=""> <li>About</li></a>
+                    <a href=""> <li>Contact</li></a>
+
+                </ul>
+            </nav>
+            <div class="home">
+                <div class="container">
+
+                    <picture>
+                        <!-- <source srcset="img/peace-pie-original.jpg" media="(min-width: 1200px)">
+                        <source srcset="img/peace-pie-500.jpg" media="(min-width: 800px)"> -->
+                        <img src="./imgs/Anil-blob280X310.png" alt="Anil's Photograph">
+                     </picture>
+                    <h1>Hi, I'm ANIL</h1>
+                    <h2>Software Developer</h2>
+                    <a href=""><button> HIRE ME</button></a>
+                    <div class="social">
+                        <ul>
+                            <a href=""><li> <box-icon name='envelope'  color='#1F232D' ></box-icon></li></a>
+                            <a href=""><li ><box-icon name='github'  type='logo' color='#1F232D' ></box-icon></li></a>
+                            <a href=""><li ><box-icon name='linkedin'  type='logo' color='#1F232D' ></box-icon></li></a>
+                        </ul>
+                      </div>
+                    
+                    <h1 class="heading">EXPERIENCE</h1>
+                      <div class="job-container">
+
+                          <div class="job">
+                             
+                              <h2>AXTRIA</h2>
+                              <h3>ANALYST</h3>
+                              <h4>JULY 2021-CURRENT</h4>
+                          </div>
+                              
+                            <div class="job">
+                             
+                              <h2>CAREERNINJA</h2>
+                              <h3>A.I & SOFTWARE INTERN</h3>
+                              <h4>MARCH 2020 - JUNE 2021</h4>
+                            
+                          </div>
+                      </div>
+
+
+
+                    <h1 class="heading">PROJECTS</h1>
+                        <div class="card-container">
+
+                            <div class="card">
+                                <h2>QUIZZER</h2>
+                                <p> A Web App that generates multiple choice questions from wikipedia with <span>70-80% accuracy</span>. Developed with <span>Python, Flask, HTML, CSS, and NLTK </span>libraries. </p>
+                                <a href="#"><box-icon name='github'  type='logo' color='#1F232D' ></box-icon></a>
+                            </div>
+                            <div class="card">
+                                <h2>SUMMING-UP BOT</h2>
+                                <p>The web app summarizes the input text. Fetches the text through popular news API, wikipedia, voice command and manual input and outputs the summary using <span>NLTK</span> library. Implemented in <span>Python, Flask, HTML, and CSS</span> </p>
+                                <a href="#"><box-icon name='github'  type='logo' color='#1F232D' ></box-icon></a>
+                            </div>
+                            <div class="card">
+                                <h2>DISTRIBUTED LEDGER SYSTEM </h2>
+                                <p>Implemented in <span>Python</span> and a REST API for client in <span>JavaScript</span> and database in <span>PostgreSQL</span>. Used <span>Hyperledger Swatooth</span> framework to provide traceability of drugs in the supply chain with decentralised database. </p>
+                                <a href="#"><box-icon name='github'  type='logo' color='#1F232D' ></box-icon></a>
+                            </div>
+                        </div>
+                    <a href="#" class="view-more">View More >></a>
+
+
+                    <h1 class="heading">ABOUT</h1>
+
+                    <div class="about">
+                        <h2>ANIL CHHIPA </h2>
+                        <p>Hi, my name is <span>Anil Chhipa</span>. I am a <span>software developer</span> based in Rajasthan. I did my graduation and post-graduation from CSE Dual- Degree at the National Institute of Technology, Hamirpur(NITH).</p>
+                            <p>I have a good understanding of <span>Data Structures and Algorithms.</span>  I like to participate in coding challenges to grow my problem-solving skills.</p>
+                            <p>I mostly use <span>Python </span>to develop my projects. I have a passion for <span>AI/ML, Data Science, and Natural Language Processing.</span></p>
+                            <br>
+                            <p>Apart from that, I have been in various leadership roles during my college life, such as <span>President at CSEC</span>, departmental society to promote coding culture in NIT Hamirpur. <span>Lead Volunteer at GLUG</span>, a community aimed at promoting open-source software and culture at NITH. Conducted various workshops and seminars on open-source technologies for <span>200+ audiences.</span> </p>
+                        
+                    </div>
+
+                    <h1 class="heading">CONTACT</h1>
+
+                    <div class="form-container">
+                        <h2>Send me a Message!</h2>
+                        <form  action="/index.html" method="Post">
+                            <label for="name">
+                                Name
+                                <br>
+                                <input type="text" name="name"  id="name"/>
+                            </label>
+                            <br>
+                            <label for="mail">
+                                E-mail
+                                <br>
+                                <input type="email" name="mail" id="mail"/>
+                            </label>
+                            <br>
+                            <label for="message">
+                                Message
+                                <br>
+                                <input type="text" name="message" id="message"/>
+                            </label>
+                            <br>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
             
-          <div class="job">
-            <!-- <img src="./imgs/Careerninnja.svg" alt="CarrerNinjs Logo"/> -->
-            <h2>CAREERNINJA</h2>
-            <h3>A.I & SOFTWARE INTERN</h3>
-            <h4>MARCH 2020 - JUNE 2021</h4>
-          
-        </div>
-      </div>
-      
-  </section>
-  <section>
-      <hr>
-      <div class="Projects">
-        <div class="heading">
-            <h1>PROJECTS</h1>
-        </div>
-        <div class="container">
-            <div class="card">
-                <h2>QUIZZER</h2>
-                <p> A Web App that generates multiple choice questions from wikipedia with <span>70-80% accuracy</span>. Developed with <span>Python, Flask, HTML, CSS, and NLTK </span>libraries. </p>
-                <a href="#"><box-icon name='github'  type='logo' color='#494E55' ></box-icon></a>
-            </div>
-            <div class="card">
-                <h2>SUMMING-UP BOT</h2>
-                <p>The web app summarizes the input text. Fetches the text through popular news API, wikipedia, voice command and manual input and outputs the summary using <span>NLTK</span> library. Implemented in <span>Python, Flask, HTML, and CSS</span> </p>
-                <a href="#"><box-icon name='github'  type='logo' color='#494E55' ></box-icon></a>
-            </div>
-            <div class="card">
-                <h2>DISTRIBUTED LEDGER SYSTEM </h2>
-                <p>Implemented in <span>Python</span> and a REST API for client in <span>JavaScript</span> and database in <span>PostgreSQL</span>. Used <span>Hyperledger Swatooth</span> framework to provide traceability of drugs in the supply chain with decentralised database. </p>
-                <a href="#"><box-icon name='github'  type='logo' color='#494E55' ></box-icon></a>
-            </div>
-            <a href="#">View More >></a>
-        </div>
-      </div>
-  </section>
-  <section>
-      <hr>
-      <div class="Contact">
-    <div class="heading">
-        <h1>CONTACT</h1>
-    </div>
-    <div class="form-container">
-        <h2>Send me a Message!</h2>
-        <form  action="/index.html" method="Post">
-            <label for="name">
-                Name
-                <br>
-                <input type="text" name="name"  id="name"/>
-            </label>
-            <br>
-            <label for="mail">
-                E-mail
-                <br>
-                <input type="email" name="mail" id="mail"/>
-            </label>
-            <br>
-            <label for="message">
-                Message
-                <br>
-                <input type="text" name="message" id="message"/>
-            </label>
-            <br>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-</div>
-  </section>
+        </section>
+   </div>
+  
+ 
   <footer>
       <div class="footer">
 
           <div class="footer-heading">
               <h1>Contact me at</h1>
           </div>
-          <div class="social-symbols">
+          <div class="social">
             <ul>
-                <li> <box-icon name='envelope'  color='#EBF2F8' ></box-icon></li>
-                <li ><box-icon name='github'  type='logo' color='#EBF2F8' ></box-icon></li>
-                <li ><box-icon name='linkedin'  type='logo' color='#EBF2F8' ></box-icon></li>
+                <a href=""><li> <box-icon name='envelope'  color='#FBFEFE' ></box-icon></li></a>
+                <a href=""><li ><box-icon name='github'  type='logo' color='#FBFEFE' ></box-icon></li></a>
+                <a href=""><li ><box-icon name='linkedin'  type='logo' color='#FBFEFE' ></box-icon></li></a>
             </ul>
           </div>
           <div class="made">
