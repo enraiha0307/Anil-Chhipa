@@ -9,7 +9,6 @@
     	document.createElement( "picture" );
   	</script>
   	<script src="picturefill.min.js"></script>
-    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
@@ -23,41 +22,40 @@
         </section>
         <section class="site-begin">
             <nav>
-                <!-- <svg class="menu" width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="1.5" y1="11.5" x2="28.5" y2="11.5" stroke="#3B3E47" stroke-width="3" stroke-linecap="round"/>
-                    <line x1="1.5" y1="1.5" x2="28.5" y2="1.5" stroke="#3B3E47" stroke-width="3" stroke-linecap="round"/>
-                    <line x1="1.5" y1="21.5" x2="28.5" y2="21.5" stroke="#3B3E47" stroke-width="3" stroke-linecap="round"/>
-                    </svg> -->
                     
                 <ul>
                     <a href=""><li>Home</li></a>
-                    <a href=""><li>Experience</li></a>
-                    <a href=""> <li>Projects</li></a>
-                    <a href=""> <li>About</li></a>
-                    <a href=""> <li>Contact</li></a>
+                    <a href="#experience"><li>Experience</li></a>
+                    <a href="#projects"> <li>Projects</li></a>
+                    <a href="#about"> <li>About</li></a>
+                    <a href="#contact"> <li>Contact</li></a>
 
                 </ul>
             </nav>
             <div class="home">
                 <div class="container">
+                    <div class="hero">
 
-                    <picture>
-                        <!-- <source srcset="img/peace-pie-original.jpg" media="(min-width: 1200px)">
-                        <source srcset="img/peace-pie-500.jpg" media="(min-width: 800px)"> -->
-                        <img src="./imgs/Anil-blob280X310.png" alt="Anil's Photograph">
-                     </picture>
-                    <h1>Hi, I'm ANIL</h1>
-                    <h2>Software Developer</h2>
-                    <a href=""><button> HIRE ME</button></a>
-                    <div class="social">
-                        <ul>
-                            <a href=""><li> <box-icon name='envelope'  color='#1F232D' ></box-icon></li></a>
-                            <a href=""><li ><box-icon name='github'  type='logo' color='#1F232D' ></box-icon></li></a>
-                            <a href=""><li ><box-icon name='linkedin'  type='logo' color='#1F232D' ></box-icon></li></a>
-                        </ul>
-                      </div>
+                        <picture>
+                            <img src="./imgs/Anil-blob280X310.png" alt="Anil's Photograph">
+                         </picture>
+                         <div class="hero-text">
+
+                             <h1>Hi, I'm ANIL</h1>
+                             <h2>Software Developer</h2>
+                             <a href=""><button> HIRE ME</button></a>
+                             <div class="social">
+                                 <ul>
+                                    <a href="chhipaanil98@gmail.com"><li>Mail </li></a>
+                                     
+                                     <a href="https://github.com/adhv45/"><li > Github</li></a>
+                                     <a href="https://www.linkedin.com/in/anilchhipa/"><li >Linkedin</li></a> 
+                                 </ul>
+                               </div>
+                         </div>
+                    </div>
                     
-                    <h1 class="heading">EXPERIENCE</h1>
+                    <h1 class="heading" id="experience">EXPERIENCE</h1>
                       <div class="job-container">
 
                           <div class="job">
@@ -70,7 +68,8 @@
                             <div class="job">
                              
                               <h2>CAREERNINJA</h2>
-                              <h3>A.I & SOFTWARE INTERN</h3>
+                              <h3>A.I & SOFTWARE </h3>
+                              <h3>INTERN</h3>
                               <h4>MARCH 2020 - JUNE 2021</h4>
                             
                           </div>
@@ -78,32 +77,37 @@
 
 
 
-                    <h1 class="heading">PROJECTS</h1>
+                    <h1 class="heading" id="projects">PROJECTS</h1>
                         <div class="card-container">
 
                             <div class="card">
                                 <h2>QUIZZER</h2>
                                 <p> A Web App that generates multiple choice questions from wikipedia with <span>70-80% accuracy</span>. Developed with <span>Python, Flask, HTML, CSS, and NLTK </span>libraries. </p>
-                                <a href="#"><box-icon name='github'  type='logo' color='#1F232D' ></box-icon></a>
+                                <a href="#">Github Repo</a>
                             </div>
                             <div class="card">
                                 <h2>SUMMING-UP BOT</h2>
                                 <p>The web app summarizes the input text. Fetches the text through popular news API, wikipedia, voice command and manual input and outputs the summary using <span>NLTK</span> library. Implemented in <span>Python, Flask, HTML, and CSS</span> </p>
-                                <a href="#"><box-icon name='github'  type='logo' color='#1F232D' ></box-icon></a>
+                                <a href="#">Github Repo</a>
                             </div>
                             <div class="card">
                                 <h2>DISTRIBUTED LEDGER SYSTEM </h2>
                                 <p>Implemented in <span>Python</span> and a REST API for client in <span>JavaScript</span> and database in <span>PostgreSQL</span>. Used <span>Hyperledger Swatooth</span> framework to provide traceability of drugs in the supply chain with decentralised database. </p>
-                                <a href="#"><box-icon name='github'  type='logo' color='#1F232D' ></box-icon></a>
+                                <a href="#">Github Repo</a>
                             </div>
                         </div>
                     <a href="#" class="view-more">View More >></a>
 
 
-                    <h1 class="heading">ABOUT</h1>
+                    <h1 class="heading" id="about">ABOUT</h1>
+                    <div class="about-flex">
 
+                        <div class="about-img">
+                            <img src="./imgs/About.png" alt="About image"/>
+                           
+                        </div>
                     <div class="about">
-                        <h2>ANIL CHHIPA </h2>
+                        <!-- <h2>ANIL CHHIPA </h2> -->
                         <p>Hi, my name is <span>Anil Chhipa</span>. I am a <span>software developer</span> based in Rajasthan. I did my graduation and post-graduation from CSE Dual- Degree at the National Institute of Technology, Hamirpur(NITH).</p>
                             <p>I have a good understanding of <span>Data Structures and Algorithms.</span>  I like to participate in coding challenges to grow my problem-solving skills.</p>
                             <p>I mostly use <span>Python </span>to develop my projects. I have a passion for <span>AI/ML, Data Science, and Natural Language Processing.</span></p>
@@ -111,8 +115,9 @@
                             <p>Apart from that, I have been in various leadership roles during my college life, such as <span>President at CSEC</span>, departmental society to promote coding culture in NIT Hamirpur. <span>Lead Volunteer at GLUG</span>, a community aimed at promoting open-source software and culture at NITH. Conducted various workshops and seminars on open-source technologies for <span>200+ audiences.</span> </p>
                         
                     </div>
+                    </div>
 
-                    <h1 class="heading">CONTACT</h1>
+                    <h1 class="heading" id="contact">CONTACT</h1>
 
                     <div class="form-container">
                         <h2>Send me a Message!</h2>
@@ -154,13 +159,14 @@
           </div>
           <div class="social">
             <ul>
-                <a href=""><li> <box-icon name='envelope'  color='#FBFEFE' ></box-icon></li></a>
-                <a href=""><li ><box-icon name='github'  type='logo' color='#FBFEFE' ></box-icon></li></a>
-                <a href=""><li ><box-icon name='linkedin'  type='logo' color='#FBFEFE' ></box-icon></li></a>
+                <a href="chhipaanil98@gmail.com"><li>Mail </li></a>
+                                     
+                <a href="https://github.com/adhv45"><li > Github</li></a>
+                <a href="https://www.linkedin.com/in/anilchhipa/"><li >Linkedin</li></a> 
             </ul>
           </div>
           <div class="made">
-              <h2>Made by <span>Akanksha Gahalot</span></h2>
+              <h2>Made by <span><a href="https://github.com/enraiha0307"> Akanksha Gahalot</a></span></h2>
           </div>
           <div class="copyright">
               <h3>Copyright 2021</h3>
@@ -168,5 +174,8 @@
       </div>
   </footer>
     
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" integrity="sha512-O+atZ/gABlcFlpIoLQR04f72qHqZWKwTVsQZHqk/8VE2nrzDlnqhXbnXP7Gh/TyhpPT8tEUm5A580GG8AloHTA==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./app.js"></script>
 </body>
 </html>
