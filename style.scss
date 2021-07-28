@@ -72,6 +72,7 @@
 nav{
   display: grid;
   grid-template-columns: 5% 1fr 5%;
+ margin-bottom: 1rem;
   ul{
     grid-column: 1/4;
     display:flex;
@@ -123,7 +124,10 @@ nav{
     picture{
       position: relative;
       left: -2%;
-      margin: 1rem auto;
+      img{
+        margin: 2rem 1rem;
+      }
+     
     }
     .hero-text{
       display: flex;
@@ -357,13 +361,12 @@ nav{
   flex-direction: column;
   justify-content: space-between;
   margin: 5% auto;
-  padding: 15%;
-  background-color:#F2F7F8 ;
+  padding: 5%;
+  background-color:#FBFEFE;
   border-radius: 10px;
-  box-shadow: 0px 3px 8px 1px rgba(184, 178, 178, 0.25);
+  box-shadow: 0;
   h2{
     position: relative;
-    top:-8%;
     align-self: center;
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -384,7 +387,7 @@ nav{
       margin: 5px;
       border: none;
       border-bottom: 1px solid #1F232D;
-      background-color: #F2F7F8;
+      background-color: #FBFEFE;
   
     }
   }
@@ -536,7 +539,9 @@ flex-direction: column;
       picture{
         position: relative;
         left: -2%;
-        margin: 1rem auto;
+        img{
+          margin: 1rem 1rem;
+        }
       }
       .hero-text{
         display: flex;
@@ -731,13 +736,13 @@ flex-direction: column;
     flex-direction: column;
     justify-content: space-between;
     margin: 5% auto;
-    padding: 15%;
-    background-color:#F2F7F8 ;
+    padding: 5%;
+    background-color:#FBFEFE ;
     border-radius: 10px;
-    box-shadow: 0px 3px 8px 1px rgba(184, 178, 178, 0.25);
+    box-shadow: 0;
     h2{
       position: relative;
-      top:-8%;
+      
       align-self: center;
       font-size: 1.5rem;
       margin-bottom: 1rem;
@@ -758,7 +763,7 @@ flex-direction: column;
         margin: 5px;
         border: none;
         border-bottom: 1px solid #1F232D;
-        background-color: #F2F7F8;
+        background-color: #FBFEFE;
     
       }
     }
@@ -903,9 +908,9 @@ nav{
   display: grid;
   grid-template-columns: 5%  1fr 5%;
   ul{
-    grid-column: 1/4;
+    grid-column: 2/4;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
    
      //anchor tags
@@ -917,7 +922,7 @@ nav{
        }
        //list
       li{
-        font-size: 0.8rem;
+        font-size: 1rem;
         list-style: none;
         margin-top: 1rem;
       }
@@ -957,7 +962,9 @@ nav{
     picture{
     position: relative;
     left: 10%;
+    img{
       margin: 1rem 1rem;
+    }
     }
     .hero-text{
       
@@ -1188,16 +1195,15 @@ nav{
   flex-direction: column;
   justify-content: space-between;
   margin: 2% auto;
-  padding: 15%;
-  background-color:#F2F7F8 ;
+  padding: 5%;
+  background-color:#FBFEFE ;
   border-radius: 10px;
-  box-shadow: 0px 3px 8px 1px rgba(184, 178, 178, 0.25);
+  box-shadow: 0;
   h2{
     position: relative;
-    top:-25%;
     align-self: center;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
     font-weight: 300;
   }
   form{
@@ -1216,7 +1222,7 @@ nav{
       width: 15rem;
       border: none;
       border-bottom: 1px solid #1F232D;
-      background-color: #F2F7F8;
+      background-color: #FBFEFE;
   
     }
   }

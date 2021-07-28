@@ -123,6 +123,7 @@
   display: grid;
   -ms-grid-columns: 5% 1fr 5%;
       grid-template-columns: 5% 1fr 5%;
+  margin-bottom: 1rem;
 }
 
 .site-begin nav ul {
@@ -199,7 +200,10 @@
 .site-begin .home .container .hero picture {
   position: relative;
   left: -2%;
-  margin: 1rem auto;
+}
+
+.site-begin .home .container .hero picture img {
+  margin: 2rem 1rem;
 }
 
 .site-begin .home .container .hero .hero-text {
@@ -481,16 +485,15 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 5% auto;
-  padding: 15%;
-  background-color: #F2F7F8;
+  padding: 5%;
+  background-color: #FBFEFE;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 3px 8px 1px rgba(184, 178, 178, 0.25);
-          box-shadow: 0px 3px 8px 1px rgba(184, 178, 178, 0.25);
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
 }
 
 .site-begin .home .container .form-container h2 {
   position: relative;
-  top: -8%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -525,7 +528,7 @@
   margin: 5px;
   border: none;
   border-bottom: 1px solid #1F232D;
-  background-color: #F2F7F8;
+  background-color: #FBFEFE;
 }
 
 .site-begin .home .container .form-container form button {
@@ -695,7 +698,9 @@
   .site-begin .home .container .hero picture {
     position: relative;
     left: -2%;
-    margin: 1rem auto;
+  }
+  .site-begin .home .container .hero picture img {
+    margin: 1rem 1rem;
   }
   .site-begin .home .container .hero .hero-text {
     display: -webkit-box;
@@ -899,15 +904,14 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin: 5% auto;
-    padding: 15%;
-    background-color: #F2F7F8;
+    padding: 5%;
+    background-color: #FBFEFE;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 3px 8px 1px rgba(184, 178, 178, 0.25);
-            box-shadow: 0px 3px 8px 1px rgba(184, 178, 178, 0.25);
+    -webkit-box-shadow: 0;
+            box-shadow: 0;
   }
   .site-begin .home .container .form-container h2 {
     position: relative;
-    top: -8%;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -939,7 +943,7 @@
     margin: 5px;
     border: none;
     border-bottom: 1px solid #1F232D;
-    background-color: #F2F7F8;
+    background-color: #FBFEFE;
   }
   .site-begin .home .container .form-container form button {
     background-color: #1F232D;
@@ -1100,14 +1104,15 @@
         grid-template-columns: 5%  1fr 5%;
   }
   .site-begin nav ul {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-column: 1/4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1120,7 +1125,7 @@
     color: #2C71A7;
   }
   .site-begin nav ul a li {
-    font-size: 0.8rem;
+    font-size: 1rem;
     list-style: none;
     margin-top: 1rem;
   }
@@ -1173,6 +1178,8 @@
   .site-begin .home .container .hero picture {
     position: relative;
     left: 10%;
+  }
+  .site-begin .home .container .hero picture img {
     margin: 1rem 1rem;
   }
   .site-begin .home .container .hero .hero-text {
@@ -1422,20 +1429,19 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin: 2% auto;
-    padding: 15%;
-    background-color: #F2F7F8;
+    padding: 5%;
+    background-color: #FBFEFE;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 3px 8px 1px rgba(184, 178, 178, 0.25);
-            box-shadow: 0px 3px 8px 1px rgba(184, 178, 178, 0.25);
+    -webkit-box-shadow: 0;
+            box-shadow: 0;
   }
   .site-begin .home .container .form-container h2 {
     position: relative;
-    top: -25%;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
     font-weight: 300;
   }
   .site-begin .home .container .form-container form {
@@ -1463,7 +1469,7 @@
     width: 15rem;
     border: none;
     border-bottom: 1px solid #1F232D;
-    background-color: #F2F7F8;
+    background-color: #FBFEFE;
   }
   .site-begin .home .container .form-container form button {
     background-color: #1F232D;
