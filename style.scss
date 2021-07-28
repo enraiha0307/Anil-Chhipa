@@ -21,7 +21,7 @@
      position: relative;
      transform: translateY(-50%);
      letter-spacing: 5px;
-     animation: text-clip 1s 0.6s cubic-bezier(0.5, 0, 0.1, 1) both;
+     animation: text-clip 3s 0.6s cubic-bezier(0.5, 0, 0.1, 1) both;
    }
    .underline{
      position: relative;
@@ -78,6 +78,7 @@ nav{
     display:flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 1rem;
    
      //anchor tags
     a{
@@ -125,6 +126,7 @@ nav{
       position: relative;
       left: -2%;
       img{
+        width: 8rem;
         margin: 2rem 1rem;
       }
      
