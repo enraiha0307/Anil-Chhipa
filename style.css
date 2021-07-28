@@ -1182,6 +1182,7 @@
     left: 10%;
   }
   .site-begin .home .container .hero picture img {
+    width: 13rem;
     margin: 1rem 1rem;
   }
   .site-begin .home .container .hero .hero-text {
